@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<body>
+
+    <h1> Desafio 1: Formulário Básico de Contato </h1>
+    <form action="/processar-contato" method="get">
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <br>
+        <br>
+        
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+
+    </form>
+
+    <h1>Desafio 2: Formulário de Registro de Usuário </h1>
+    <form action="/processar-registro" method="get">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" required>
+        <br>
+        <br>
+
+        <label for="Confirmar Senha">Confirmar Senha:</label>
+        <input type="password" name="Confirmar Senha" required>
+        <br>
+        <br>
+
+        <label for="País">País:</label>
+        <select name="País">
+            <option value="pt-br">Brasil</option>
+            <option value="eng">Estados Unidos</option>
+            <option value="esp">Argentina</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="checkbox" name="Aceitar Termos e Condições" value="1"> Aceitar Termos e Condições
+        <br>
+        <br>
+
+        <input type="submit" value="Registrar">
+        <br>
+        <br>
+    </form>
+
+    <h1>Desafio 3: Formulário Avançado com Validação</h1>
+    <form action="/processar-registro" method="get"></form>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="Número de Telefone/Celular">Número de Telefone/Celular: </label><input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="Apenas números" maxlength="11" required>
+        <br>
+        <br>
+        
+        <label for="Data de Nascimento">Data de Nascimento: </label><input type="date" name="nascimento" min="1900-01-01" max="2023-12-31">
+        <br>
+        <br>
+
+        <legend>Seleciona o gênero:</legend>
+          
+            <div>
+              <input type="radio" id="Masculino" name="gênero" value="Masculino" />
+              <label for="Masculino">Masculino</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="Feminino" name="gênero" value="Feminino" />
+              <label for="Feminino">Feminino</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="Outro" name="gênero" value="Outro" />
+              <label for="Outro">Outro</label>
+            </div>
+        <br>
+
+        <legend>Interesses:</legend>
+
+            <div>
+              <input type="checkbox" id="Esportes" name="Esportes"/>
+              <label for="Esportes">Esportes</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="Tecnologia" name="Tecnologia"/>
+              <label for="Tecnologia">Tecnologia</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Viagem" name="Viagem"/>
+                <label for="Viagem">Viagem</label>
+              </div>
+        <br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+        
+    </form>
+    
+</body>
+</html>
